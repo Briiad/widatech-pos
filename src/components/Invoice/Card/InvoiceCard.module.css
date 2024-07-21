@@ -1,0 +1,44 @@
+.invoiceTable {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 20px 0;
+}
+
+.invoiceTable th,
+.invoiceTable td {
+  padding: 12px 15px;
+  border: 1px solid #ddd;
+  text-align: left;
+}
+
+.invoiceTable th {
+  background-color: #f4f4f4;
+}
+
+.invoiceRow {
+  transition: background-color 0.3s ease;
+}
+
+.invoiceRow:hover {
+  background-color: #f1f1f1;
+}
+
+.chip {
+  margin-right: 8px;
+}
+
+.notesChip {
+  background-color: #ffd700;
+  color: #000;
+}
+
+.productsChip {
+  background-color: #008080;
+  color: #fff;
+}
+
+.paginationWrapper {
+  margin-top: 20px;
+  display: flex;
+  justify-content: center;
+}

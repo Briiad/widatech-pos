@@ -1,14 +1,25 @@
-# Mantine Vite template
+# WidaTech PoS Webapp
 
-## Features
+## How to use locally (docker)
 
-This template comes with the following features:
-
-- [PostCSS](https://postcss.org/) with [mantine-postcss-preset](https://mantine.dev/styles/postcss-preset)
-- [TypeScript](https://www.typescriptlang.org/)
-- [Storybook](https://storybook.js.org/)
-- [Vitest](https://vitest.dev/) setup with [React Testing Library](https://testing-library.com/docs/react-testing-library/intro)
-- ESLint setup with [eslint-config-mantine](https://github.com/mantinedev/eslint-config-mantine)
+1. Make sure you have docker installed on your machine
+- [Docker for Windows](https://docs.docker.com/desktop/install/windows-install/)
+- [Docker for Mac](https://docs.docker.com/desktop/install/mac-install/)
+- [Docker for Linux](https://docs.docker.com/desktop/install/linux-install/)
+2. Clone the repository
+```bash
+git clone https://github.com/Briiad/widatech-pos.git
+```
+3. Copy the `.env.example` file to `.env`
+```bash
+cp .env.example .env
+cp ./server/.env.example ./server/.env
+```
+4. Run the docker-compose command
+```bash
+docker-compose up
+``` 
+5. Open your browser and navigate to `http://localhost:8000`
 
 ## npm scripts
 

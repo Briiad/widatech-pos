@@ -1,10 +1,23 @@
-.title {
-  color: light-dark(var(--mantine-color-black), var(--mantine-color-white));
-  font-size: rem(100px);
-  font-weight: 900;
-  letter-spacing: rem(-2px);
+.container{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+}
 
-  @media (max-width: $mantine-breakpoint-md) {
-    font-size: rem(50px);
+.button{
+  background-color: var(--mantine-color-indigo);
+  color: var(--mantine-color-white);
+  font-size: rem(20px);
+  font-weight: 700;
+  padding: rem(10px) rem(20px);
+  border-radius: rem(10px);
+  margin-top: rem(20px);
+  cursor: pointer;
+  transition: background-color 100ms ease;
+
+  &:hover {
+    background-color: var(--mantine-color-indigo-dark);
   }
 }
